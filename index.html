@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="summary">
+            <div>Total Income: <span id="totalIncome">$0</span></div>
+            <div>Total Expense: <span id="totalExpense">$0</span></div>
+            <div>Remaining Balance: <span id="remainingBalance">$0</span></div>
+            <button id="resetButton">Reset</button>
+        </div>
+        <ul class="expense-list" id="expenseList"></ul>
+        <div class="form-fields">
+        <form id="incomeForm">
+            <h3>Add Income</h3>
+            <div class="form-group">
+                <input type="number" id="incomeAmount" placeholder="Enter income amount" required>
+            </div>
+            <button type="submit">Add Income</button>
+        </form>
+        
+        <form id="expenseForm">
+            <h3>Add Expense</h3>
+            <div class="form-group">
+                <input type="text" id="expenseDescription" placeholder="Enter description" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="expenseAmount" placeholder="Enter expense amount" required>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+    </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
