@@ -117,8 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     resetButton.addEventListener("click", function() {
         totalIncome = 0;
-        totalExpense = 0;
-        expenses = [];
         saveToLocalStorage();
         updateSummary();
         renderExpenses();
